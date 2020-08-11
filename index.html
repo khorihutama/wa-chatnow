@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Chat Now</title>
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-01-512.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+    <style>
+        .iti__flag {
+            background-image: url("assets/img/flags.png");
+        }
+
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            .iti__flag {
+                background-image: url("assets/img/flags@2x.png");
+            }
+        }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body class="text-center">
+
+    <form class="form-signin" method="POST" action="action">
+        <img class="mb-4" src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-01-512.png" alt=""
+            width="72" height="72">
+        <label for="phone" class="h3 mb-3 font-weight-normal">Input WA Number</label>
+        <input type="tel" id="phone" class="form-control" name="phone" required autofocus>
+        <br> <br>
+        <button class="btn btn-lg btn-success" type="submit">Chat Now</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020 <a href="https://github.com/khorihutama">@khorihutama</a></p>
+    </form>
+    <script src="assets/js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            initialCountry: "ID",
+            nationalMode:true,
+            hiddenInput: "full_phone",
+            utilsScript: "assets/js/utils.js?1590403638580"
+        });
+    </script>
+</body>
+
+</html>
