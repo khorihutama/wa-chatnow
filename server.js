@@ -21,16 +21,7 @@ app.post('/chat-now', function (req, res) {
     } catch (error) {
         console.log(error.message)
     }
-    
-    
 })
-
-app.post('/action', function (req, res) {
-    console.log()
-
-    // res.redirect('https://api.whatsapp.com/send/?phone=62' + req.body.wow)
-})
-
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`)
